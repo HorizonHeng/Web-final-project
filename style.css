@@ -1,3 +1,40 @@
 * {
   text-decoration: none;
+  color: black;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 40px;
+  font-family: "Shanti", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+}
+.nav-menu {
+  display: flex;
+  gap: 4rem;
+}
+#search-bar {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(118, 118, 118, 0.678);
+}
+.log-in-form {
+  background-color: rgb(123, 128, 170);
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.sign-up {
+  color: rgb(123, 128, 170);
+}
+.search-form .fa-solid {
+  position: absolute;
+  padding: 8px;
 }
