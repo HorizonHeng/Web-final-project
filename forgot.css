@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: "Shanti", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(the_marias_band_bethany_vargas.jpg);
+}
+@import url("https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
+
+.container {
+  opacity: 0.9;
+  display: flex;
+  max-width: 1100px;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h1 {
+  color: #556086;
+  font-family: "Shanti", sans-serif;
+  font-weight: 300px;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #556086;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #556086;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: #394769;
+}
+
+.links {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #556086;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: fff;
+}
+
+.image-section img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  border-radius: 0 8px 8px 0;
+  background-color: fff;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .footer-links {
+  margin-top: 5px;
+}
+
+footer .footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
