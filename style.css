@@ -6,9 +6,8 @@
   margin: 0;
 }
 body {
-  background: url(https://s3-alpha-sig.figma.com/img/f04c/86e9/52dcb07e5ef07033e2740027cfe296b2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dtqQ0fIa0wEOEqPV~s0GxeLQESIT9MJA6JUozcWu7gkDMsE~YCGKTCi8dGw-8onOaGlFQ2KzezsAq-7FHChsnVltgqNSYD7t0MQiq3IE~C0KrDXr0~uEPeIgWiM49thGDxaiQoVIgEo7Psh61pTLdHiZ5KgtfpR8raGM2S~zEYn9TAx1mW8kPgc6HGpMnKellsHXZ6e7NUi3urQ-mGgC1Xla-TdmYW6DVUA4sNkxNIKxM5OsoOmvQ9ZUQSIHILtuYalwMpuWByiCGIVfP~0PdQUA9Ifrc9DzUnZB6c6A0HIxRxt6Uuxjl0AZF4sMZxAqDVtnoYXwvkAHqVLGhl~r-w__);
+ background-image: background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat , url(https://s3-alpha-sig.figma.com/img/f04c/86e9/52dcb07e5ef07033e2740027cfe296b2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dtqQ0fIa0wEOEqPV~s0GxeLQESIT9MJA6JUozcWu7gkDMsE~YCGKTCi8dGw-8onOaGlFQ2KzezsAq-7FHChsnVltgqNSYD7t0MQiq3IE~C0KrDXr0~uEPeIgWiM49thGDxaiQoVIgEo7Psh61pTLdHiZ5KgtfpR8raGM2S~zEYn9TAx1mW8kPgc6HGpMnKellsHXZ6e7NUi3urQ-mGgC1Xla-TdmYW6DVUA4sNkxNIKxM5OsoOmvQ9ZUQSIHILtuYalwMpuWByiCGIVfP~0PdQUA9Ifrc9DzUnZB6c6A0HIxRxt6Uuxjl0AZF4sMZxAqDVtnoYXwvkAHqVLGhl~r-w__);
 }
-
 .nav-bar {
   position: absolute;
   display: flex;
@@ -95,4 +94,22 @@ body {
 }
 .sign-up {
   color: rgb(100, 107, 166);
+}
+.sub-text {
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 56px;
+  font-size: 56px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.second-line {
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d80000;
+  line-height: 56px;
+  font-size: 56px;
 }
