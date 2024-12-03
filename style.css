@@ -5,47 +5,94 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background: url(https://s3-alpha-sig.figma.com/img/f04c/86e9/52dcb07e5ef07033e2740027cfe296b2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dtqQ0fIa0wEOEqPV~s0GxeLQESIT9MJA6JUozcWu7gkDMsE~YCGKTCi8dGw-8onOaGlFQ2KzezsAq-7FHChsnVltgqNSYD7t0MQiq3IE~C0KrDXr0~uEPeIgWiM49thGDxaiQoVIgEo7Psh61pTLdHiZ5KgtfpR8raGM2S~zEYn9TAx1mW8kPgc6HGpMnKellsHXZ6e7NUi3urQ-mGgC1Xla-TdmYW6DVUA4sNkxNIKxM5OsoOmvQ9ZUQSIHILtuYalwMpuWByiCGIVfP~0PdQUA9Ifrc9DzUnZB6c6A0HIxRxt6Uuxjl0AZF4sMZxAqDVtnoYXwvkAHqVLGhl~r-w__);
+}
+
 .nav-bar {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 40px;
-  font-family: "Shanti", sans-serif;
+  width: 1880px;
+  height: 80px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 30px;
+}
+.nav-logo {
+  flex: 1 0 0;
 }
 .nav-menu {
   display: flex;
+  width: 850px;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
+  flex-shrink: 0;
+  font-size: 16px;
 }
-#search-bar {
+.text-logo {
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 1.96px;
+  font-size: 28px;
+}
+.log-in {
   display: flex;
+  width: 850px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+}
+.search-form {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 200px;
   padding: 8px;
+  flex: 1 0 0;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   gap: 4px;
-  flex-shrink: 0;
-  font-weight: 400;
-  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#search-bar {
+  border: none;
+  width: 170px;
+  height: auto;
+  line-height: 25px;
+}
+.search-form:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.search-form:focus {
+  border: none;
+}
+.Home {
+  display: flex;
+  height: 658px;
+  padding: 60px 170px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
 }
 .log-in-form {
-  background-color: rgb(123, 128, 170);
-  padding: 12px 20px;
-  border-radius: 5px;
+  background-color: rgb(100, 107, 166);
+  padding: 10px 30px;
+  border-radius: 10px;
   color: white;
-  text-align: center;
 }
 .sign-up {
-  color: rgb(123, 128, 170);
-}
-.search-form .fa-solid {
-  position: absolute;
-  padding: 8px;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+  color: rgb(100, 107, 166);
 }
