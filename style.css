@@ -17,12 +17,20 @@
 }
 .nav-menu {
   display: flex;
-  gap: 4rem;
+  gap: 40px;
 }
 #search-bar {
-  padding: 7px 10px;
-  border-radius: 5px;
-  border: 2px solid rgba(118, 118, 118, 0.678);
+  display: flex;
+  width: 200px;
+  padding: 8px;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  gap: 4px;
+  flex-shrink: 0;
+  font-weight: 400;
+  line-height: 20px;
 }
 .log-in-form {
   background-color: rgb(123, 128, 170);
@@ -37,4 +45,7 @@
 .search-form .fa-solid {
   position: absolute;
   padding: 8px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
