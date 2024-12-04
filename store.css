@@ -1,0 +1,39 @@
+*{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #556086;
+    
+}
+
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.nav-links-left{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links-right{
+    display: flex;
+    gap: 15px;
+    justify-self: end;
+}
+
+.nav-text{
+    font-size: 20px;
+    color: black;
+
+}
+
+.search {
+        
+}
