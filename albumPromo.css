@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
+body {
+  display: flex;
+}
+body #Back {
+  height: 40px;
+  justify-content: baseline;
+  align-self: first baseline;
+  margin-left: 20px;
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: #556086;
+}
+
+.collection {
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  align-items: center;
+  width: 1296px;
+  height: 298px;
+  flex-shrink: 0;
+  background: url(alb.jpg) lightgray 70% / cover no-repeat;
+  grid-template-rows: 2;
+}
+.collection h1 {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 30px;
+}
+.collection button {
+  display: flex;
+  margin-left: 30px;
+  width: 144px;
+  height: 60px;
+  padding: var(--sds-size-space-300);
+  justify-content: center;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: var(--sds-size-stroke-border) solid #556086;
+  background: #fff;
+  color: #556086;
+}
+.collection p {
+  margin-left: 30px;
+  text-align: left;
+}
+.imgAlbum {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+.imgAlbum img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
