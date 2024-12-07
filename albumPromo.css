@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
-body {
+body2 {
   display: flex;
 }
-body #Back {
+body2 #Back {
+  width: 105px;
+  color: white;
+  accent-color: white;
   height: 40px;
   justify-content: baseline;
   align-self: first baseline;
   margin-left: 20px;
   margin-top: 50px;
   border-radius: 25px;
+  color: white;
   background-color: #556086;
+  margin-right: 150px;
 }
 
 .collection {
+  margin-top: 45px;
   padding: 30px;
   color: white;
   display: flex;
@@ -26,6 +32,7 @@ body #Back {
   grid-template-rows: 2;
 }
 .collection h1 {
+  color: white;
   font-family: "Jaro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -47,7 +54,12 @@ body #Back {
   background: #fff;
   color: #556086;
 }
+.bxs-cart-alt:hover {
+  color: white;
+}
+
 .collection p {
+  color: white;
   margin-left: 30px;
   text-align: left;
 }
