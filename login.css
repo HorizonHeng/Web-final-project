@@ -1,4 +1,5 @@
 /* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
 body {
   font-family: "Shanti", sans-serif;
   margin: 0;
@@ -10,7 +11,6 @@ body {
   min-height: 100vh;
   background: url(the_marias_band_bethany_vargas.jpg);
 }
-@import url("https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
 
 .container {
   opacity: 0.9;
@@ -21,6 +21,18 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+}
+.container #Back {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 5px;
+  width: 70px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #394769;
+  color: white;
+  cursor: pointer;
 }
 
 .form-section {
