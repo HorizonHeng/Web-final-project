@@ -35,6 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Asset&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shanti&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="card.css">
   </head>
   <body>
     <header>
@@ -91,12 +92,14 @@
           id="in-subscribe"
           placeholder="Enter your email to stay updated"
         />
-        <input
-          type="submit"
-          name="email-submit"
-          id="email-submit"
-          value="Subscribe"
-        />
+        <button
+  type="submit"
+  name="email-submit"
+  id="email-submit"
+  onclick="changeButton(event)"
+>
+  Subscribe
+</button>
       </div>
     </main>
     <section class="sub-main">
@@ -136,19 +139,20 @@
       <div class="t-3"><p>They were offered an opportunity to make songs for television, which  helped them understand the visual and sonic feel that they were striving for,<a href="https://en.wikipedia.org/wiki/The_Mar%C3%ADas#cite_note-remezcla.com-3" target="_blank">[3]</a> but when it did not materialize, they used their recordings to make an <a href="https://en.wikipedia.org/wiki/Extended_play" target="_blank">EP</a>, entitled Superclean Vol. I. <a href="https://en.wikipedia.org/wiki/The_Mar%C3%ADas#cite_note-:0-2" target="_blank">[2]</a> Vol. I was released in 2017, while its counterpart Vol. II was released in 2018.</p></div>
     </div>
   </section>
+  <script src="changeButton.js"></script>
   
   </body>
 </html>
- <!--  //section for promotion album -->
+
 
  <body2>
-  <div class="back">
+ <!--  <div class="back">
     <a href="index.html">
       <button id="Back" class="btn btn-primary">
         <i style="color: white; font-size: 30px;" class='bx bx-up-arrow-alt'></i>
       </button></a
     >
-  </div>
+  </div> -->
 
   <div class="container mt-5">
     <div class="collection">
@@ -157,31 +161,39 @@
         Listen to our newly released<br />
         songs on classic vinly records, CD and Cassette
       </p>
+     <a href="store.html">
       <button class="btn btn-primary">
         Shop Now &nbsp;<i class="bx bxs-cart-alt"></i>
       </button>
+     </a>
     </div>
     <div class="albumStore">
       <div class="Vinly">
         <img src="vinyl.png" alt="">
       <h3>Vinly</h3>
-      <button class="btn btn-primary">
-        Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
-      </button>
+      <a href="store.html">
+        <button class="btn btn-primary">
+          Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
+        </button>
+      </a>
       </div>
       <div class="cd">
         <img src="cd.png" alt="">
         <h3>CD</h3>
-        <button class="btn btn-primary">
-          Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
-        </button>
+        <a href="store.html">
+          <button class="btn btn-primary">
+            Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
+          </button>
+        </a>
       </div>
       <div class="cas">
         <img src="cassette.png" alt="">
         <h3>Cassete</h3>
-        <button class="btn btn-primary">
-          Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
-        </button>
+        <a href="store.html">
+          <button class="btn btn-primary">
+            Buy now &nbsp;<i style="color: white;" class="bx bxs-cart-alt"></i>
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -191,3 +203,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   
 </body2>
+
+<body3>
+  
+  <h1> meet our members</h1>
+  <br>
+  <div class="container-mem">
+    <div class="palette">
+      <div class="member"><span>Maria Zardoya</span></div>
+      <div class="member"><span>Joshua David Conway</span></div>
+      <div class="member"><span>Jesse Perlman</span></div>
+      <div class="member"><span>Edward James</span></div>
+    </div>
+    <div id="stats">
+      <span>the marias members</span>
+    
+  </div>
+  
+  
+</body3>

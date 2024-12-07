@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
 body2 {
   display: flex;
+  padding: 70px;
+  border: 30px solid #556086;
 }
 body2 #Back {
   width: 105px;
@@ -16,6 +18,9 @@ body2 #Back {
   background-color: #556086;
   margin-right: 150px;
   cursor: pointer;
+}
+.container {
+  margin-left: 150px;
 }
 
 .collection {
@@ -86,7 +91,7 @@ body2 #Back {
 .albumStore img {
   height: 95%;
   transform: translateY(0px) translateX(-40px);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .Vinly h3 {
