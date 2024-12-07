@@ -53,6 +53,7 @@ body2 #Back {
   border: var(--sds-size-stroke-border) solid #556086;
   background: #fff;
   color: #556086;
+  cursor: pointer;
 }
 .bxs-cart-alt:hover {
   color: white;
@@ -72,4 +73,14 @@ body2 #Back {
   width: auto;
   height: 300px;
   object-fit: cover;
+}
+.albumStore {
+  display: flex;
+  align-content: baseline;
+  justify-content: space-evenly;
+}
+
+.albumStore img {
+  align-self: baseline;
+  height: 95%;
 }
