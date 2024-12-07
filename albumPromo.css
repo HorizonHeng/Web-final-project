@@ -15,6 +15,7 @@ body2 #Back {
   color: white;
   background-color: #556086;
   margin-right: 150px;
+  cursor: pointer;
 }
 
 .collection {
@@ -25,9 +26,12 @@ body2 #Back {
   justify-content: space-evenly;
   border-radius: 20px;
   align-items: center;
-  width: 1296px;
+  width: 1396px;
   height: 298px;
   flex-shrink: 0;
+  .albumStore h3 {
+    transform: translateX(250px);
+  }
   background: url(alb.jpg) lightgray 70% / cover no-repeat;
   grid-template-rows: 2;
 }
@@ -76,13 +80,69 @@ body2 #Back {
 }
 .albumStore {
   display: flex;
-  align-content: baseline;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .albumStore img {
-  align-self: baseline;
   height: 95%;
+  transform: translateY(0px) translateX(-40px);
+  transition: transform 0.3s ease;
 }
-.albumStore h3 {
+
+.Vinly h3 {
+  transform: translateX(250px);
 }
+.cd h3 {
+  transform: translateX(150px);
+}
+.cas h3 {
+  transform: translateX(150px);
+}
+.cas button {
+  transform: translateX(140px);
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: var(--sds-size-stroke-border) solid #556086;
+  background: #242323;
+  color: white;
+  cursor: pointer;
+}
+.cd button {
+  transform: translateX(120px);
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: var(--sds-size-stroke-border) solid #556086;
+  background: #242323;
+  color: white;
+  cursor: pointer;
+}
+
+.Vinly button {
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: var(--sds-size-stroke-border) solid #556086;
+  background: #242323;
+  color: white;
+  cursor: pointer;
+  transform: translateX(230px);
+}
+
+.albumStore img:hover {
+  transform: translateY(-130px) translateX(-40px);
+}
+/* .albumStore:hover > :not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+} */
