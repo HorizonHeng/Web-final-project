@@ -384,10 +384,10 @@ HEAD body3 h1 {
 
 .tour-page {
   display: flex;
-  padding: 60px 170px;
+  padding: 80px 170px;
   justify-content: center;
   align-items: center;
-  gap: 160px;
+  gap: 230px;
 }
 
 .tour-date {
@@ -456,7 +456,6 @@ HEAD body3 h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 60px;
-  overflow: hidden;
   color: #000;
   font-family: "Roboto", serif;
   text-align: center;
@@ -472,7 +471,7 @@ HEAD body3 h1 {
 }
 .sub-event {
   display: flex;
-  width: 520px;
+  width: 500px;
   gap: 16px;
 }
 .sub-event .details {
@@ -485,8 +484,76 @@ HEAD body3 h1 {
   font-weight: normal;
 }
 .sub-event .status {
-  font-weight: 500;
+  width: 180px;
   line-height: 28px;
   text-align: right;
   font-size: 16px;
+}
+.booking-temp {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.promote {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 50px 100px;
+}
+.promote-plan {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  gap: 10px;
+  background: white;
+  padding-top: 10px;
+  height: 350px;
+  border-radius: 10px;
+  border: 2px solid rgba(233, 232, 232, 0.695);
+  padding-bottom: 30px;
+}
+.promote-title {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.promote-price {
+  justify-content: center;
+  display: flex;
+}
+.promote-feature li {
+  padding: 3px;
+  padding-left: 40px;
+}
+.super-title,
+.super-price,
+.super-feature li {
+  color: white;
+}
+.super {
+  background-color: black;
+}
+.promote .main-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.promote-button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+.super-button {
+  background-color: #fff;
+}
+.normal-button {
+  background-color: #000;
+  color: white;
 }
