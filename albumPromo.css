@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body2 {
   display: flex;
   padding: 70px;
@@ -49,20 +52,57 @@ body2 #Back {
   margin-left: 30px;
 }
 .collection button {
-  display: flex;
-  margin-left: 30px;
-  width: 144px;
-  height: 60px;
-  padding: var(--sds-size-space-300);
-  justify-content: center;
-  align-items: center;
-  gap: var(--sds-size-space-200);
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: var(--sds-size-stroke-border) solid #556086;
-  background: #fff;
-  color: #556086;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 1px solid white;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #242323;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
   cursor: pointer;
+  
+}
+.collection button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 16px;
+  background-color: #556086;
+  z-index: -1;
+}
+.collection button:hover > :not(:hover){
+  color: white;
+}
+
+.collection button:hover, .collection button:focus > .collection i:focus, .collection i:hover {
+  color: white;
+}
+
+.collection button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+button :hover{
+  color:white;
+}
+
+.collection button:active {
+  transform: scale(0.9);
 }
 .bxs-cart-alt:hover {
   color: white;
