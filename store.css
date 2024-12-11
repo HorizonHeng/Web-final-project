@@ -84,6 +84,11 @@ img {
 
 .under-pic a{
   cursor: pointer;
+  font-size: 30px;
+}
+
+.under-pic i{
+  color:#556086;
 }
 
 .products {
