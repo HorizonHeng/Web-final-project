@@ -6,6 +6,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -68,26 +72,38 @@ header {
 }
 .search-form {
   display: flex;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   width: 200px;
   padding: 6px;
   flex: 1 0 0;
   justify-content: flex-end;
+  box-shadow: none;
   align-items: center;
   gap: 4px;
-  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.51);
 }
+
+
 #search-bar {
+  color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
+  border-radius: 15px;
+  width:200px;
   border: none;
   width: 170px;
   height: auto;
-  line-height: 25px;
+  box-shadow: none;
+  
   font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
+  outline: none;
 }
+input[type="search"] {
+  outline: none; /* Removes the focus outline */
+}
+
+
 
 .log-in-form {
   background-color: rgb(100, 107, 166);
@@ -292,7 +308,7 @@ header {
   flex-shrink: 0;
   background: #fff;
 }
-HEAD body3 h1 {
+body3 h1 {
   margin-top: 50px;
   margin-left: 50px;
   font-family: "Shanti", serif;

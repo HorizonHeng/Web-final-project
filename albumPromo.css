@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body2 {
   display: flex;
   padding: 70px;
@@ -64,6 +67,7 @@ body2 #Back {
   text-decoration: none;
   transition: 0.3s ease all;
   z-index: 1;
+  cursor: pointer;
   
 }
 .collection button:before {
@@ -79,8 +83,11 @@ body2 #Back {
   background-color: #556086;
   z-index: -1;
 }
+.collection button:hover > :not(:hover){
+  color: white;
+}
 
-.collection button:hover, .collection button:focus, .collection i:focus, .collection i:hover {
+.collection button:hover, .collection button:focus > .collection i:focus, .collection i:hover {
   color: white;
 }
 
@@ -89,6 +96,9 @@ body2 #Back {
   left: 0;
   right: 0;
   opacity: 1;
+}
+button :hover{
+  color:white;
 }
 
 .collection button:active {
