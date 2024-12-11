@@ -54,6 +54,36 @@ header {
   flex-shrink: 0;
   font-size: 1em;
 }
+.nav-text{
+  transition: all 0.5s ease;
+}
+.nav-text:hover{
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+  background-color: #556086;
+}
+.nav-items{
+  transition: transform 0.5s ease;
+}
+.nav-items:hover{ 
+  transform: translateY(-5px);
+}
+.nav-menu a{
+  transition: all 0.5s ease;
+}
+.nav-menu a:not(.sign-up):hover{
+  padding: 8px;
+  background-color: #26272b
+
+}
+.nav-menu a:not(.log-in-form):hover{
+  background-color: #d80000;
+  color: snow;
+  padding: 8px;
+  border-radius: 10px;
+
+}
 .text-logo {
   font-family: "Shanti", serif;
   font-weight: 400;
@@ -99,6 +129,8 @@ header {
   font-style: normal;
   outline: none;
 }
+
+
 input[type="search"] {
   outline: none; /* Removes the focus outline */
 }
@@ -114,6 +146,8 @@ input[type="search"] {
 .sign-up {
   color: rgb(100, 107, 166);
 }
+
+
 .home-text {
   position: absolute;
   display: flex;
@@ -515,7 +549,7 @@ body3 h1 {
 .promote {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 150px;
   padding: 50px 100px;
 }
 .promote-plan {
@@ -551,7 +585,8 @@ body3 h1 {
   color: white;
 }
 .super {
-  background-color: black;
+  background: url(bg.jpg);
+  background: 0.1;
 }
 .promote .main-price {
   font-size: 2.5rem;
