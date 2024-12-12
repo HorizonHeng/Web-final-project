@@ -54,35 +54,33 @@ header {
   flex-shrink: 0;
   font-size: 1em;
 }
-.nav-text{
+.nav-text {
   transition: all 0.5s ease;
 }
-.nav-text:hover{
+.nav-text:hover {
   padding: 5px;
   color: white;
   border-radius: 10px;
   background-color: #556086;
 }
-.nav-items{
+.nav-items {
   transition: transform 0.5s ease;
 }
-.nav-items:hover{ 
+.nav-items:hover {
   transform: translateY(-5px);
 }
-.nav-menu a{
+.nav-menu a {
   transition: all 0.5s ease;
 }
-.nav-menu a:not(.sign-up):hover{
+.nav-menu a:not(.sign-up):hover {
   padding: 8px;
-  background-color: #26272b
-
+  background-color: #26272b;
 }
-.nav-menu a:not(.log-in-form):hover{
+.nav-menu a:not(.log-in-form):hover {
   background-color: #d80000;
   color: snow;
   padding: 8px;
   border-radius: 10px;
-
 }
 .text-logo {
   font-family: "Shanti", serif;
@@ -113,29 +111,25 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.51);
 }
 
-
 #search-bar {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   border-radius: 15px;
-  width:200px;
+  width: 200px;
   border: none;
   width: 170px;
   height: auto;
   box-shadow: none;
-  
+
   font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
   outline: none;
 }
 
-
 input[type="search"] {
   outline: none; /* Removes the focus outline */
 }
-
-
 
 .log-in-form {
   background-color: rgb(100, 107, 166);
@@ -146,7 +140,6 @@ input[type="search"] {
 .sign-up {
   color: rgb(100, 107, 166);
 }
-
 
 .home-text {
   position: absolute;
@@ -438,6 +431,7 @@ body3 h1 {
   justify-content: center;
   align-items: center;
   gap: 230px;
+  width: 100%;
 }
 
 .tour-date {
@@ -540,11 +534,14 @@ body3 h1 {
   font-size: 16px;
 }
 .booking-temp {
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
+}
+
+.booking-temp p {
+  padding-left: 50px;
 }
 .promote {
   display: flex;
