@@ -513,6 +513,7 @@ HEAD body3 h1 {
   border-radius: 10px;
   border: 2px solid rgba(233, 232, 232, 0.695);
   padding-bottom: 30px;
+  transition: ease 1s;
 }
 .promote-title {
   text-align: center;
@@ -591,4 +592,7 @@ HEAD body3 h1 {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 10px;
+}
+.promote-plan:hover {
+  transform: scale(1.05);
 }
