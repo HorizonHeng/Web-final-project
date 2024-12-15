@@ -558,8 +558,8 @@ body3 h1 {
   font-style: normal;
 }
 .promote {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 150px;
   padding: 50px 170px;
 }
@@ -688,4 +688,10 @@ body3 h1 {
 }
 .promote-plan:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 900px) {
+  .promote {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
