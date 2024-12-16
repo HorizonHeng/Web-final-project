@@ -15,6 +15,9 @@
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  border-bottom: 1px solid black;
+  z-index: 1000;
+  position: fixed;
 }
 .center-text {
   display: flex;
@@ -36,4 +39,447 @@
 }
 .fa-solid {
   padding-top: 10px;
+}
+.left-side h3 {
+  display: flex;
+  line-height: 24px;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  color: #0000007e;
+  font-size: 1.2rem;
+  padding-top: 50px;
+  padding-left: 125px;
+}
+.left-side {
+  width: 50%;
+  height: 100%;
+}
+.right-side {
+  width: 50%;
+  height: 500vh;
+  background-color: rgba(242, 242, 242, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.both-side {
+  display: flex;
+  padding-top: 80px;
+}
+.express {
+  padding-left: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.aba {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: url(aba2.png) lightgray 50% / cover no-repeat;
+}
+.image {
+  display: flex;
+  padding-top: 120px;
+  gap: 50px;
+}
+.visa svg {
+  width: 72px;
+  height: 78px;
+  flex-shrink: 0;
+}
+.paypal {
+  width: 49px;
+  height: 76px;
+  flex-shrink: 0;
+}
+.master-card {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+.or {
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+  line-height: 24px;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.line1 {
+  width: 137.004px;
+  height: 1px;
+  background-color: black;
+}
+.line2 {
+  width: 137.004px;
+  height: 1px;
+  background-color: black;
+}
+.text {
+  padding-top: -50px;
+}
+.contact {
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contact h4 {
+  display: grid;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 34.8px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.delivery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 150px;
+  gap: 20px;
+}
+#email {
+  width: 458px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-left: 30px;
+}
+.delivery h4 {
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 34.8px;
+  font-size: 2rem;
+  font-weight: bold;
+  grid-row: 1;
+}
+#country {
+  grid-row: 2;
+  grid-column: 1/2;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+.first-name {
+  grid-row: 3;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+.last-name {
+  grid-row: 4;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+#default {
+  color: rgb(132, 132, 132);
+}
+
+.address {
+  grid-column: 1/2;
+  grid-row: 5;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+.add {
+  grid-column: 1/2;
+  grid-row: 6;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+.three {
+  grid-row: 7;
+  gap: 20px;
+  display: flex;
+}
+.phone-number {
+  grid-column: 1/2;
+  grid-row: 8;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+.city {
+  width: 142px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+#state {
+  width: 142px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+.zip-code {
+  width: 142px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  padding-left: 30px;
+}
+.shipping-method {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 150px;
+  gap: 20px;
+}
+.shipping-method h4 {
+  grid-row: 1;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  font-size: 2rem;
+  font-weight: bold;
+  grid-row: 1;
+  letter-spacing: var(--Headline-Small-Tracking, 0px);
+}
+.shipping {
+  width: 458px;
+  grid-row: 2;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  font-size: 1rem;
+  padding-left: 30px;
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 150px;
+  gap: 20px;
+}
+.payment h4 {
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.credit-card {
+  display: flex;
+  justify-content: space-between;
+  width: 479px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 8px 8px 0px 0px;
+  border: 0.5px solid #000;
+  background: #fff;
+}
+.credit-card-back {
+  width: 479px;
+  height: 418px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ccc;
+}
+.credit {
+  display: flex;
+  margin: 20px 35px;
+  gap: 20px;
+}
+.credit-tick {
+  width: 27px;
+  height: 26px;
+  flex-shrink: 0;
+  color: #000;
+}
+.credit-card h5 {
+  font-family: "Shanti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.aba2,
+.visa2,
+.paypal2,
+.master-card2 {
+  display: inline-block;
+}
+
+.aba2 svg,
+.visa2 svg,
+.master-card2 svg {
+  width: 20px;
+  height: auto;
+}
+.aba2 {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: url(aba2.png) lightgray 50% / cover no-repeat;
+}
+.logo {
+  display: flex;
+  gap: 15px;
+  padding: 25px 30px;
+}
+.paypal2 svg {
+  width: 15px;
+  height: auto;
+}
+.card-num {
+  display: flex;
+  flex-direction: column;
+}
+.card-number {
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  margin: 15px 20px;
+  width: 435px;
+  padding-left: 25px;
+  font-size: 15px;
+}
+.expired-date {
+  width: 211px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  padding-left: 25px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.cvc {
+  width: 211px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  padding-left: 25px;
+  font-size: 15px;
+}
+.date-cvc {
+  display: flex;
+  gap: 13px;
+}
+.name-card {
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #757575;
+  background: #fff;
+  margin: 15px 20px;
+  width: 435px;
+  padding-left: 25px;
+  font-size: 15px;
+}
+.checkbox {
+  margin: 15px 20px;
+  display: flex;
+  gap: 15px;
+}
+.checkbox h6 {
+  padding-top: 5px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Roboto", serif;
+}
+.tick {
+  width: 27px;
+  height: 26px;
+}
+.pay {
+  width: 479px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 8px 8px;
+  border: 0.5px solid #000;
+  background: #fff;
+}
+.payyer {
+  display: flex;
+  margin: 20px 35px;
+  gap: 20px;
+}
+.payyer h5 {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Roboto", serif;
 }
