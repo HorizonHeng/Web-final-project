@@ -551,6 +551,7 @@ body3 h1 {
   flex-direction: row;
   gap: 150px;
   padding: 50px 100px;
+  margin-left: 70px;
 }
 .promote-plan {
   display: flex;
@@ -585,9 +586,10 @@ body3 h1 {
   color: white;
 }
 .super {
-  background: url(bg.jpg);
-  background: 0.1;
+  background: url(bg.jpg) 50% lightgray;
+  text-shadow: rgb(221, 27, 27) 1px 0 10px;
 }
+
 .promote .main-price {
   font-size: 2.5rem;
   font-weight: bold;

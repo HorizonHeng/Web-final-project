@@ -1,5 +1,6 @@
 /* General Styles */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Moul&family=Shanti&family=Silkscreen:wght@400;700&display=swap");
+
 body {
   font-family: "Shanti", sans-serif;
   margin: 0;
@@ -9,7 +10,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url(the_marias_band_bethany_vargas.jpg);
+  background: url(the_marias_band_bethany_vargas.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -22,6 +24,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
+
 .container #Back {
   display: flex;
   margin-top: 15px;
@@ -46,8 +49,7 @@ body {
 .form-section h1 {
   color: #556086;
   font-family: "Shanti", sans-serif;
-  font-weight: 300px;
-  font-style: normal;
+  font-weight: 300;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -82,7 +84,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
-  width: 50%;
 }
 
 .btn:hover {
@@ -108,7 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: fff;
+  background-color: #fff; /* Fixed typo */
 }
 
 .image-section img {
@@ -116,7 +117,6 @@ body {
   max-height: 90%;
   height: auto;
   border-radius: 0 8px 8px 0;
-  background-color: fff;
 }
 
 /* Footer Styles */
@@ -139,4 +139,48 @@ footer .footer-links a {
 
 footer .footer-links a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduced padding */
+  }
+
+  .form-section {
+    padding: 20px; /* Reduced padding */
+  }
+
+  .form-section h1 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .btn {
+    width: 100%; /* Full width for buttons */
+  }
+
+  .image-section {
+    flex-direction: column; /* Stack image and text */
+  }
+
+  .image-section img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 0; /* Remove rounded corners on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group label {
+    font-size: 12px; /* Smaller font for labels */
+  }
+
+  .input-group input {
+    padding: 8px; /* Smaller padding */
+  }
+
+  .btn {
+    font-size: 14px; /* Smaller button text */
+  }
 }
