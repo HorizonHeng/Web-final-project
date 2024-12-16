@@ -31,6 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Asset&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shanti&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,42 +44,50 @@
     <header>
       <nav class="nav-bar">
         <div class="red-box"></div>
+    
+        <!-- Hamburger icon (use the same ID as in JS) -->
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          ☰
+        </div>
+    
         <a href="#" class="nav-logo">
           <h2 class="text-logo">the marías</h2>
         </a>
-        <ul class="nav-menu">
-          <li class="nav-items">
+        
+        <!-- Navigation menu -->
+        <div class="nav-menu" id="nav-menu">
             <a href="#" class="nav-text">Home</a>
-          </li>
-          <li class="nav-items">
             <a href="#" class="nav-text">Discography</a>
-          </li>
-          <li class="nav-items">
             <a href="store.html" class="nav-text">Shop</a>
-          </li>
-          <li class="nav-items">
             <a href="#mems" id="member" class="nav-text">Members</a>
-          </li>
-          <li class="nav-items">
             <div class="search-form">
               <input
                 type="search"
                 name="search"
                 id="search-bar"
-                placeholder="Search in site" style="border: none;"
+                placeholder="Search in site"
+                style="border: none;"
               />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </li>
-          <li>
             <a href="register.html" class="sign-up">Sign up</a>
-          </li>
-          <li>
             <a href="login.html" class="log-in-form">Log in</a>
-          </li>
-        </ul>
+          </div>
       </nav>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger'); // Use the correct ID
+  const navMenu = document.getElementById('nav-menu'); // Use the correct ID for the menu
+  
+  // Toggle the menu when hamburger is clicked
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Toggle the visibility of the menu
+  });
+});
+
+    </script>
+    
     <main class="main-section">
       <div class="home-text">
         <h1>submarine <span>out now</span></h1>
@@ -142,7 +151,7 @@
     </div>
   </section>
   <script src="changeButton.js"></script>
-
+  
   </body>
   </html>
 
@@ -219,8 +228,8 @@
     </div>
     <div id="stats">
       <span>the marias members</span>
-    
   </div>
+</div>
 </body3>
 
 
@@ -262,6 +271,7 @@
   <div class="booking-temp">
     <h1>Book your ticket</h1>
     <p>Get early access to our ticket</p>
+  </div>
       <div class="promote">
         <div class="promote-plan">
           <div class="promote-title">Normal</div>
@@ -277,7 +287,7 @@
         </div>
         <div class="promote-plan super">
           <div class="promote-title super-title">SUPER VIP</div>
-          <div class="promote-price super-price">$<div. class="main-price super-price">50</div.><br>/day</div>
+          <div class="promote-price super-price">$<div. class="main-price super-price">1000</div.><br>/day</div>
             <ul class="promote-feature super-feature">
               <li>List</li>
               <li>List</li>
@@ -300,7 +310,7 @@
           <button class="promote-button normal-button">Proceed to checkout</button>
         </div>
       </div>
-  </div>
+  
 </body5>
 <footer>
   <div class="footer-container">
