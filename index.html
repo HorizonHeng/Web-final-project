@@ -44,44 +44,50 @@
     <header>
       <nav class="nav-bar">
         <div class="red-box"></div>
+    
+        <!-- Hamburger icon (use the same ID as in JS) -->
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          ☰
+        </div>
+    
         <a href="#" class="nav-logo">
-            
-          </div>
           <h2 class="text-logo">the marías</h2>
         </a>
-        <ul class="nav-menu">
-          <li class="nav-items">
+        
+        <!-- Navigation menu -->
+        <div class="nav-menu" id="nav-menu">
             <a href="#" class="nav-text">Home</a>
-          </li>
-          <li class="nav-items">
             <a href="#" class="nav-text">Discography</a>
-          </li>
-          <li class="nav-items">
             <a href="store.html" class="nav-text">Shop</a>
-          </li>
-          <li class="nav-items">
             <a href="#mems" id="member" class="nav-text">Members</a>
-          </li>
-          <li class="nav-items">
             <div class="search-form">
               <input
                 type="search"
                 name="search"
                 id="search-bar"
-                placeholder="Search in site" style="border: none;"
+                placeholder="Search in site"
+                style="border: none;"
               />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </li>
-          <li>
             <a href="register.html" class="sign-up">Sign up</a>
-          </li>
-          <li>
             <a href="login.html" class="log-in-form">Log in</a>
-          </li>
-        </ul>
+          </div>
       </nav>
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger'); // Use the correct ID
+  const navMenu = document.getElementById('nav-menu'); // Use the correct ID for the menu
+  
+  // Toggle the menu when hamburger is clicked
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Toggle the visibility of the menu
+  });
+});
+
+    </script>
+    
     <main class="main-section">
       <div class="home-text">
         <h1>submarine <span>out now</span></h1>
@@ -145,7 +151,7 @@
     </div>
   </section>
   <script src="changeButton.js"></script>
-  <script src="burger.js"></script>
+  
   </body>
   </html>
 
