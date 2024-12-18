@@ -459,6 +459,22 @@ input[type="search"] {
   .hamburger {
     display: block; /* Show hamburger menu on small screens */
   }
+  .main-section {
+    display: flex;
+    height: 50.5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75em;
+    align-self: stretch;
+    background-position: 3.125em;
+    background: linear-gradient(
+        rgba(200, 200, 200, 0.5),
+        rgba(200, 200, 200, 0.5)
+      ),
+      url(the_marias_band_bethany_vargas.jpg) lightgray 70% / cover no-repeat;
+    
+  }
 
   #nav-menu {
     display: none; /* Hide the menu by default */
@@ -594,89 +610,86 @@ input[type="search"] {
 }
 
 
-
-
 body3 h1 {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 5%; /* Use relative margin */
+  margin-left: 5%; /* Use relative margin */
   font-family: "Shanti", serif;
 }
-/* From Uiverse.io by arshshaikh06 */
+
 .container-mem {
-  margin-left: 350px;
-  height: 600px;
-  width: 1234px;
+  margin: 0 auto; /* Center horizontally */
+  height: auto; /* Use auto for height */
+  max-width: 1200px; /* Set a maximum width */
   border-radius: 1em;
   box-shadow: 0 10px 20px #dbdbdb;
   font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
+  padding: 2%; /* Add padding for all screens */
 }
 
 .palette {
   display: flex;
-  height: 86%;
+  flex-wrap: wrap; /* Allow wrapping */
   width: 100%;
 }
 
 .member {
-  height: 100%;
-  flex: 1;
+  flex: 1 1 200px; /* Minimum width of 300px, flexible */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: flex 0.1s linear;
+  transition: flex 0.2s ease; /* Smoother transition */
+  position: relative; /* For positioning the span */
+  min-height: 250px; /* Set a minimum height for better visibility */
 }
 
 .member span {
   opacity: 0;
-  transition: opacity 0.1s linear;
+  transition: opacity 0.2s ease; /* Smoother transition */
+  position: absolute; /* Position the span */
 }
 
 .member:nth-child(1) {
-  background: url(1.jpg);
-  background-repeat: no-repeat;
+  background: url(1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .member:nth-child(2) {
-  background: url(2.jpg);
-  background-repeat: no-repeat;
+  background: url(2.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .member:nth-child(3) {
-  background: url(3.jpg);
-  background-repeat: no-repeat;
+  background: url(3.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .member:nth-child(4) {
-  background: url(4.png);
-  background-repeat: no-repeat;
+  background: url(4.png) no-repeat center center;
   background-size: cover;
 }
 
 .member:hover {
-  flex: 2;
+  flex: 1 1 400px; /* Expand slightly on hover */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .member:hover span {
-  opacity: 1;
+  opacity: 1; /* Show on hover */
 }
 
 #stats {
-  height: 14%;
+  height: auto; /* Use auto for height */
   width: 100%;
   background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5em;
+  padding: 1em; /* Responsive padding */
   box-sizing: border-box;
   color: #bebebe;
 }
@@ -685,6 +698,37 @@ body3 h1 {
   fill: #bebebe;
   transform: scale(1.2);
 }
+
+/* Media Queries for Additional Responsiveness */
+@media (max-width: 1200px) {
+  .member {
+    flex: 1 1 300px; /* Keep members at a consistent size */
+  }
+}
+
+@media (max-width: 900px) {
+  .member {
+    flex: 1 1 300px; /* Keep members at a consistent size */
+  }
+}
+
+@media (max-width: 600px) {
+  .member {
+    flex: 1 1 100%; /* Stack members on small screens */
+    min-height: 300px; /* Ensure adequate height */
+  }
+
+  #stats {
+    flex-direction: column; /* Stack stats on mobile */
+    align-items: flex-start; /* Align stats items to the start */
+  }
+}
+
+
+
+
+
+
 
 .tour-page {
   display: flex;
