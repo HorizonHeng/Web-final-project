@@ -140,6 +140,7 @@
   button{
     width: 414.28px;
     height: 60px;
+    cursor: pointer;
   }
 
   .check-out{
