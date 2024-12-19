@@ -7,13 +7,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="store-apparel.css" />
+    <link rel="stylesheet" href="store-sale.css" />
     <title>The Marías Offical Store</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <nav class="nav-bar">
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          ☰
+        </div>
+        <nav class="nav-bar" id="nav-bar">
           <div class="nav-links-left">
             <a href="store.html" class="nav-text">store home</a>
             <a href="store-all.html" class="nav-text">all</a>
@@ -22,7 +25,7 @@
             <a href="store-accessories.html" class="nav-text">accessories</a>
             <a href="store-sale.html" class="nav-text">sale</a>
           </div>
-          <a href="#" class="nav-logo">
+          <a href="index.html" class="nav-logo">
             <h2 class="logo">the marías</h2>
           </a>
           <div class="nav-links-right">
@@ -41,6 +44,18 @@
           </div>
         </nav>
       </header>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger'); // Use the correct ID
+    const navMenu = document.getElementById('nav-bar'); // Use the correct ID for the menu
+    
+    // Toggle the menu when hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); // Toggle the visibility of the menu
+    });
+  });
+  
+      </script>
     </div>
 
     <div class="under-pic">
