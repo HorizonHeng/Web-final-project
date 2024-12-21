@@ -1245,6 +1245,9 @@ button:hover {
     align-items: center;
     text-align: center;
   }
+  .tour-date button{
+    cursor: pointer;
+  }
   .details {
     color: #000;
     font-family: "Roboto", serif;
