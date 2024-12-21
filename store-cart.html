@@ -10,7 +10,10 @@
 <body>
     <div class="container">
         <header>
-          <nav class="nav-bar">
+          <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            ☰
+          </div>
+          <nav class="nav-bar" id="nav-bar">
             <div class="nav-links-left">
               <a href="store.html" class="nav-text">store home</a>
               <a href="store-all.html" class="nav-text">all</a>
@@ -33,11 +36,27 @@
                   />
                 </form>
               </div>
-              <i id="cart" class="bx bxs-cart bx-sm"></i>
-              <i id="user" class="bx bxs-user bx-sm"></i>
+              <a href="store-cart.html">
+                <i id="cart" class="bx bxs-cart bx-sm"></i>
+              </a>
+              <a href="login.html">
+                <i id="user" class="bx bxs-user bx-sm"></i>
+              </a>
             </div>
           </nav>
         </header>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger'); // Use the correct ID
+      const navMenu = document.getElementById('nav-bar'); // Use the correct ID for the menu
+      
+      // Toggle the menu when hamburger is clicked
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Toggle the visibility of the menu
+      });
+    });
+    
+        </script>
       </div>
 
       <div class="nav">

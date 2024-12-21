@@ -398,7 +398,7 @@ input[type="search"] {
     transform: translateY(-20px);
   }
   .input-sub {
-    transform: translateY(-100px);
+    transform: translateY(100px);
   }
 }
 /* Responsive Styles */
@@ -446,7 +446,7 @@ input[type="search"] {
     transform: translateY(-20px);
   }
   .input-sub {
-    transform: translateY(-100px);
+    transform: translateY(100px);
   }
 }
 @media (max-width: 520px) {
@@ -502,15 +502,19 @@ input[type="search"] {
   }
   .home-text h1 {
     font-size: 20px;
-    transform: translateY(40px);
+    transform: translateY(-150px);
   }
   .home-text p {
-    transform: translateY(20px);
+    transform: translateY(-250px);
   }
   .input-sub {
-    transform: translateY(-110px);
+    transform: translateY(70px);
+  }
+  .red-box{
+    display: none;
   }
 }
+
 @media (max-width: 1280px) {
   .sub-main {
     display: flex;
@@ -798,6 +802,7 @@ body3 h1 {
   background-color: rgba(233, 232, 232, 0.695);
   border-radius: 50%;
 }
+
 .event {
   display: flex;
   flex-direction: column;
@@ -912,6 +917,7 @@ body3 h1 {
   line-height: 24px;
 }
 .promote-button {
+  cursor: pointer;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -921,10 +927,14 @@ body3 h1 {
   border: none;
   font-size: 1.2rem;
 }
+.promote-button:hover{
+  color:black;
+}
 .super {
   background: url(bg.jpg) 50% lightgray;
   text-shadow: rgb(221, 27, 27) 1px 0 10px;
 }
+
 .details {
   color: #000;
   font-family: "Roboto", serif;
@@ -1238,6 +1248,9 @@ button:hover {
     display: flex;
     align-items: center;
     text-align: center;
+  }
+  .tour-date button{
+    cursor: pointer;
   }
   .details {
     color: #000;
