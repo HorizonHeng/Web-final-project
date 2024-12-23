@@ -408,7 +408,9 @@ input[type="search"] {
   .hamburger {
     display: block; /* Show hamburger menu on small screens */
   }
-
+  body {
+    overflow-x: hidden;
+  }
   #nav-menu {
     display: none; /* Hide the menu by default */
     flex-direction: column;
@@ -454,6 +456,9 @@ input[type="search"] {
 @media (max-width: 520px) {
   .hamburger {
     display: block; /* Show hamburger menu on small screens */
+  }
+  body {
+    overflow-x: hidden;
   }
   .main-section {
     display: flex;
@@ -528,7 +533,9 @@ input[type="search"] {
       ),
       url(sub-main-pic.jpg) lightgray 50% / cover no-repeat;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   .social {
     display: flex;
     gap: 1em;
@@ -700,11 +707,17 @@ body3 h1 {
   .member {
     flex: 1 1 300px; /* Keep members at a consistent size */
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 900px) {
   .member {
     flex: 1 1 300px; /* Keep members at a consistent size */
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
@@ -712,6 +725,9 @@ body3 h1 {
   .member {
     flex: 1 1 100%; /* Stack members on small screens */
     min-height: 300px; /* Ensure adequate height */
+  }
+  body {
+    overflow-x: hidden;
   }
 
   #stats {
@@ -1232,6 +1248,9 @@ button:hover {
     padding: 2em;
     border: 1em solid #556086;
   }
+  body {
+    overflow-x: hidden;
+  }
   .promote {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1325,6 +1344,9 @@ button:hover {
     height: 2.5em;
     margin: 1em auto;
   }
+  body {
+    overflow-x: hidden;
+  }
   .footer-container {
     color: #000;
     font-family: "Shanti", serif;
@@ -1356,6 +1378,9 @@ button:hover {
     flex-direction: column;
     text-align: center;
     padding: 1em;
+  }
+  body {
+    overflow-x: hidden;
   }
   .booking-temp {
     display: flex;
@@ -1410,7 +1435,9 @@ button:hover {
     padding: 1em;
     border: 0.5em solid #556086;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   body2 #Back {
     width: 90%;
     margin: 0 auto;
