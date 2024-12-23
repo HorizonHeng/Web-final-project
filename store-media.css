@@ -251,13 +251,16 @@ p {
     .nav-menu a{
       margin-left: 2em;
     }
+
   .nav-menu a:hover {
     background-color: #556086; /* Darker background on hover */
     color: white; /* Change text color on hover */
   }
+
   .search-form{
     display: none;
   }
+  
   .container {
     padding: 10px;
   }

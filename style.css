@@ -21,7 +21,9 @@ header {
 }
 
 .nav-bar {
-  position: absolute;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  position: relative; 
   display: flex;
   width: 100%;
   height: 5em;
@@ -118,8 +120,7 @@ body{
   display: flex;
   border-radius: 1em;
   width: 12.5em;
-  padding: 0.375em;
-  flex: 1 0 0;
+  padding: 8px;
   justify-content: flex-end;
   box-shadow: none;
   align-items: center;
@@ -129,7 +130,7 @@ body{
 
 #search-bar {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 0.875em;
+  font-size: 14px;
   border-radius: 1em;
   width: 10.625em;
   border: none;
@@ -139,6 +140,7 @@ body{
   font-weight: 400;
   font-style: normal;
   outline: none;
+  line-height: 20px;
 }
 
 input[type="search"] {
@@ -159,7 +161,7 @@ input[type="search"] {
 .home-text {
   position: absolute;
   display: flex;
-  top: 15.625em;
+  top: 320px;
   width: 55.75em;
   flex-direction: column;
   align-items: center;
@@ -172,7 +174,7 @@ input[type="search"] {
   font-family: "Asset", serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 3.5em;
+  line-height: 56px;
   font-size: 3.5em;
   color: #fff;
   text-align: center;
@@ -186,12 +188,11 @@ input[type="search"] {
 
 .main-section {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 100.5vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3.75em;
   align-self: stretch;
   background-position: 3.125em;
   background: linear-gradient(
@@ -215,7 +216,7 @@ input[type="search"] {
 .input-sub {
   display: flex;
   gap: 1.25em;
-  padding-top: 3.125em;
+  padding-top: 250px;
 }
 
 #in-subscribe {
@@ -315,21 +316,21 @@ input[type="search"] {
 
 .sub-text {
   display: flex;
-  padding-left: 3.125em;
-  padding-right: 3.125em;
-  gap: 1.875em;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 80px;
 }
 
 .t-1 p,
 .t-2 p,
 .t-3 p {
-  width: 31.5em;
+  width: 29em;
   height: auto; /* Adjust height to auto */
   line-height: 1.5em;
   font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.25em;
+  font-size: 1.15em;
   color: white;
 }
 
@@ -405,6 +406,7 @@ input[type="search"] {
     transform: translateY(100px);
   }
   .nav-bar{
+    width: 100%;
     max-width: 100%;
   }
   
@@ -412,6 +414,7 @@ input[type="search"] {
 @media (max-width:1080px){
   .nav-bar{
     max-width: 100%;
+    width: 100%;
   }
 }
 /* Responsive Styles */
@@ -419,7 +422,9 @@ input[type="search"] {
   .hamburger {
     display: block; /* Show hamburger menu on small screens */
   }
-
+  body {
+    overflow-x: hidden;
+  }
   #nav-menu {
     display: none; /* Hide the menu by default */
     flex-direction: column;
@@ -485,7 +490,6 @@ input[type="search"] {
       ),
       url(the_marias_band_bethany_vargas.jpg) lightgray 70% / cover no-repeat;
   }
-
   #nav-menu {
     display: none; /* Hide the menu by default */
     flex-direction: column;
@@ -517,17 +521,23 @@ input[type="search"] {
   .search-form {
     display: none;
   }
-  .home-text h1 {
-    font-size: 20px;
-    transform: translateY(-150px);
-  }
+  
+    .home-text h1 {
+      font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+      transform: none; /* Remove unnecessary translations */
+      text-align: center; /* Ensure it looks good on all screen sizes */
+      margin: 0 auto; /* Center the element */
+      padding: 1em 0; /* Add space around the text */
+    }
+    
+  
   .home-text p {
     transform: translateY(-250px);
   }
   .input-sub {
     transform: translateY(70px);
   }
-  .red-box{
+  .red-box {
     display: none;
   }
 }
@@ -543,7 +553,9 @@ input[type="search"] {
       ),
       url(sub-main-pic.jpg) lightgray 50% / cover no-repeat;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   .social {
     display: flex;
     gap: 1em;
@@ -718,6 +730,7 @@ body3 h1 {
     flex: 1 1 300px; /* Keep members at a consistent size */
     max-width: 100%;
   }
+  
 }
 
 @media (max-width: 900px) {
@@ -901,6 +914,8 @@ body3 h1 {
   border: 2px solid rgba(233, 232, 232, 0.695);
   padding-bottom: 30px;
   transition: ease 1s;
+  width: 314px;
+  height: auto;
 }
 .promote-title {
   text-align: center;
@@ -958,8 +973,8 @@ body3 h1 {
   border: none;
   font-size: 1.2rem;
 }
-.promote-button:hover{
-  color:black;
+.promote-button:hover {
+  color: black;
 }
 .super {
   background: url(bg.jpg) 50% lightgray;
@@ -1260,7 +1275,7 @@ button:hover {
     max-width: 100%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   body2 {
     flex-direction: column;
     padding: 2em;
@@ -1367,6 +1382,15 @@ button:hover {
 
   max-width: 100%;
 }
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
+}
+
 }
 
 @media (max-width: 992px) {
@@ -1375,6 +1399,9 @@ button:hover {
     max-width: 15em;
     height: 2.5em;
     margin: 1em auto;
+  }
+  body {
+    overflow-x: hidden;
   }
   .footer-container {
     color: #000;
@@ -1416,6 +1443,15 @@ button:hover {
 .nav-bar{
   max-width: 100%;
 }
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -1423,6 +1459,13 @@ button:hover {
     flex-direction: column;
     text-align: center;
     padding: 1em;
+  }
+  .main-section {
+    max-width: 100%;
+  }
+  .home-text h1 {
+    width: 542px;
+    height: auto;
   }
   .booking-temp {
     display: flex;
@@ -1486,6 +1529,15 @@ button:hover {
 .nav-bar{
   max-width: 100%;
 }
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -1493,7 +1545,9 @@ button:hover {
     padding: 1em;
     border: 0.5em solid #556086;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   body2 #Back {
     width: 90%;
     margin: 0 auto;
@@ -1547,10 +1601,7 @@ button:hover {
   gap: 10px;
 }
 
-.tour-page,.promote,#mems{
-  overflow: hidden;
-  max-width: 100%;
-}
+
 .nav-bar{
   width: 100vw;
 }
@@ -1590,6 +1641,14 @@ button:hover {
 }
 .nav-bar{
   max-width: 100%;
+}
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
 }
 
 }
