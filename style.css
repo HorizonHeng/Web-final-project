@@ -11,7 +11,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
-
+body {
+  overflow-x: hidden;
+}
 header {
   top: 0;
   position: fixed;
@@ -311,21 +313,21 @@ input[type="search"] {
 
 .sub-text {
   display: flex;
-  padding-left: 3.125em;
-  padding-right: 3.125em;
+  padding-left: 3.1em;
+  padding-right: 3.1em;
   gap: 1.875em;
 }
 
 .t-1 p,
 .t-2 p,
 .t-3 p {
-  width: 31.5em;
+  width: 29em;
   height: auto; /* Adjust height to auto */
   line-height: 1.5em;
   font-family: "Shanti", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.25em;
+  font-size: 1.15em;
   color: white;
 }
 
@@ -510,7 +512,7 @@ input[type="search"] {
   .input-sub {
     transform: translateY(70px);
   }
-  .red-box{
+  .red-box {
     display: none;
   }
 }
@@ -927,8 +929,8 @@ body3 h1 {
   border: none;
   font-size: 1.2rem;
 }
-.promote-button:hover{
-  color:black;
+.promote-button:hover {
+  color: black;
 }
 .super {
   background: url(bg.jpg) 50% lightgray;
@@ -1249,7 +1251,7 @@ button:hover {
     align-items: center;
     text-align: center;
   }
-  .tour-date button{
+  .tour-date button {
     cursor: pointer;
   }
   .details {
