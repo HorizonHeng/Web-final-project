@@ -1609,10 +1609,6 @@ button:hover {
     padding-right: 30px;
     margin-right: 50px;
   }
-  .con-event {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 576px) {
