@@ -213,7 +213,9 @@ input[type="search"] {
 .input-sub {
   display: flex;
   gap: 1.25em;
-  padding-top: 250px;
+  padding-top: 200px;
+  padding-bottom: 350px;
+
 }
 
 #in-subscribe {
@@ -393,14 +395,11 @@ input[type="search"] {
     display: none;
   }
   .home-text h1 {
-    font-size: 25px;
-    transform: translateY(30px);
+    font-size: 4em;
   }
-  .home-text p {
-    transform: translateY(-20px);
-  }
+ 
   .input-sub {
-    transform: translateY(100px);
+    padding-bottom: 350px;
   }
   .nav-bar {
     width: 100%;
@@ -452,18 +451,15 @@ input[type="search"] {
   .search-form {
     display: none;
   }
-  .home-text h1 {
-    font-size: 25px;
-    transform: translateY(30px);
-  }
-  .home-text p {
-    transform: translateY(-20px);
-  }
-  .input-sub {
-    transform: translateY(100px);
-  }
   .nav-bar {
     max-width: 100%;
+  }
+  .home-text h1 {
+    font-size: 2em;
+  }
+ 
+  .input-sub {
+    padding-bottom: 350px;
   }
 }
 @media (max-width: 520px) {
@@ -519,18 +515,11 @@ input[type="search"] {
   }
 
   .home-text h1 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
-    transform: none; /* Remove unnecessary translations */
-    text-align: center; /* Ensure it looks good on all screen sizes */
-    margin: 0 auto; /* Center the element */
-    padding: 1em 0; /* Add space around the text */
+    font-size: 3em;
   }
-
-  .home-text p {
-    transform: translateY(-250px);
-  }
+ 
   .input-sub {
-    transform: translateY(70px);
+    padding-bottom: 350px;
   }
   .red-box {
     display: none;
@@ -1465,10 +1454,7 @@ button:hover {
   .main-section {
     max-width: 100%;
   }
-  .home-text h1 {
-    width: 542px;
-    height: auto;
-  }
+  
   .booking-temp {
     display: flex;
     text-align: center;
@@ -1485,70 +1471,15 @@ button:hover {
   .collection h1 {
     font-size: 1.5em;
   }
-  .home-text {
-    margin-top: 0;
-  }
-  .home-text h1 {
-    width: 250px;
-    font-size: 16px;
-  }
-  .input-sub {
+  
+    .home-text h1 {
+      font-size: 2.5em;
+    }
+   
     .input-sub {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25em;
-      padding-top: 100px;
+      padding-bottom: 350px;
     }
-    .home-text p {
-      width: 100px;
-      text-align: center;
-      line-height: 24px;
-      font-size: 15px;
-      font-family: "Roboto", serif;
-      font-weight: 400;
-      font-style: normal;
-      color: white;
-    }
-    #in-subscribe {
-      display: flex;
-      width: 120px;
-      height: 2.5em;
-      padding: 0.5em 0.75em;
-      align-items: center;
-      gap: 0.25em;
-      border: none;
-      border-radius: 0.375em;
-      border: 0.0625em solid rgba(0, 0, 0, 0.1);
-      background: #fff;
-    }
-
-    #email-submit {
-      margin-top: 5px;
-      display: flex;
-      width: 80px;
-      height: 22px;
-      padding-top: 5px;
-      padding: 0.75em;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0.25em;
-      background: rgba(216, 0, 0, 0.8);
-      box-shadow: 0px 0.125em 0.25em 0px rgba(0, 0, 0, 0.2);
-      border: none;
-      color: white;
-      font-size: 10px;
-      font-family: "Roboto", serif;
-      font-weight: 400;
-      font-style: normal;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    #email-submit i {
-      transition: opacity 0.3s ease;
-      color: white;
-    }
+    
   }
   .collection button {
     font-size: 0.9em;
@@ -1616,12 +1547,72 @@ button:hover {
   .sub-event {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    padding-right: 30px;
-    margin-right: 50px;
+        padding-right: 30px;
+  }
+
+
+.promote{
+  overflow: auto;
+}
+@media(max-width:500px){
+  .home-text h1 {
+    font-size: 2.2em;
+  }
+ .home-text p{
+  font-size: 1em;
+ }
+  .input-sub {
+    padding-top: 750px;
   }
 }
+@media(max-width:430px){
+  .home-text h1 {
+    font-size: 1.5em;
+  }
+ .home-text p{
+  font-size:1em;
+  margin-bottom: 550px;
+}
 
+.input-sub {
+  padding-top: 750px;
+  padding-bottom: 350px;
+  }
+  #in-subscribe {
+    display: flex;
+    width: 11.9375em;
+    height: 2.5em;
+    padding: 0.5em 0.75em;
+    align-items: center;
+    gap: 0.25em;
+    border: none;
+    border-radius: 0.375em;
+    border: 0.0625em solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  #email-submit {
+    display: flex;
+    width: 70px;
+    height: 32px;
+    padding: 0.75em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    background: rgba(216, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0px 0.125em 0.25em 0px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
 @media (max-width: 576px) {
   body2 {
     padding: 1em;
@@ -1748,9 +1739,7 @@ button:hover {
     width: 100vw;
   }
 
-  .home-text p {
-    font-size: 3vw;
-  }
+  
   .social-text {
     font-size: 3vw;
   }
