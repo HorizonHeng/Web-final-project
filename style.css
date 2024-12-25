@@ -1684,7 +1684,10 @@ button:hover {
   .tour-date {
     width: 300px;
     padding: 5px;
-    padding-right: 5px;
+    padding-left: 85px;
+  }
+  .event {
+    padding-left: 110px;
   }
   .tour-page {
     width: 150px;
@@ -1713,7 +1716,9 @@ button:hover {
     padding: 0.5em;
     font-size: 0.8em;
   }
-
+  .booking-temp {
+    padding-right: 50px;
+  }
   .imgAlbum img {
     height: 8em;
     max-width: 100%;
