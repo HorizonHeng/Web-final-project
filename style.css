@@ -211,8 +211,7 @@ input[type="search"] {
 .input-sub {
   display: flex;
   gap: 1.25em;
-  padding-top: 200px;
-  padding-bottom: 350px;
+  
 
 }
 
@@ -397,7 +396,8 @@ input[type="search"] {
   }
  
   .input-sub {
-    padding-bottom: 350px;
+    padding-top: 40px;
+
   }
   .nav-bar {
     width: 100%;
@@ -453,12 +453,10 @@ input[type="search"] {
     max-width: 100%;
   }
   .home-text h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
  
-  .input-sub {
-    padding-bottom: 350px;
-  }
+
 }
 @media (max-width: 520px) {
   .hamburger {
@@ -1078,7 +1076,6 @@ body2 #Back {
   justify-content: space-evenly;
   border-radius: 1.25em;
   align-items: center;
-  width: 87.125em;
   height: 18.625em;
   flex-shrink: 0;
   grid-template-rows: 2;
@@ -1229,39 +1226,7 @@ button:hover {
     margin-right: 2em;
   }
 
-  .collection {
-    flex-direction: column;
-    align-items: center;
-
-    height: auto;
-    padding: 2em;
-    margin-top: 1.5em;
-    max-width: 100%;
-  }
-
-  .collection h1 {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .collection p {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .imgAlbum img {
-    height: 14em;
-    max-width: 90%;
-  }
-
-  .albumStore img {
-    width: 200px;
-    height: 200px;
-    transform: translateX(0);
-  }
-  .albumStore h3 {
-    transform: translateX(100px);
-  }
+  
   .nav-bar {
     max-width: 100%;
   }
@@ -1474,12 +1439,10 @@ button:hover {
   }
   
     .home-text h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
    
-    .input-sub {
-      padding-bottom: 350px;
-    }
+    
     
   }
   .collection button {
@@ -1554,29 +1517,33 @@ button:hover {
 .promote{
   overflow: auto;
 }
-@media(max-width:500px){
+@media(max-width:520px){
   .home-text h1 {
     font-size: 2.2em;
+    transform: translateY(-100px);
+    
   }
  .home-text p{
   font-size: 1em;
+  transform: translateY(-150px);
  }
-  .input-sub {
-    padding-top: 750px;
-  }
+ .input-sub{
+  padding-top: 250px;
+  padding-bottom: 0px;
+ }
+ 
 }
 @media(max-width:430px){
   .home-text h1 {
     font-size: 1.5em;
   }
  .home-text p{
-  font-size:1em;
-  margin-bottom: 550px;
+  font-size:0.8em;
 }
 
 .input-sub {
-  padding-top: 750px;
-  padding-bottom: 350px;
+  padding-top: 230px;
+  padding-bottom: 0px;
   }
   #in-subscribe {
     display: flex;
@@ -1702,6 +1669,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    font-size: 0.9em;
   }
 
   .nav-bar {
