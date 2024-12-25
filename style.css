@@ -211,6 +211,7 @@ input[type="search"] {
 .input-sub {
   display: flex;
   gap: 1.25em;
+  padding-top: 30px;
   
 
 }
