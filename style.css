@@ -887,10 +887,9 @@ body3 h1 {
 .promote {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 120px;
-  padding: 50px 100px;
-  margin-left: 70px;
-  max-width: 100%;
+  gap: 160px;
+  padding-left: 90px;
+  width: 100%;
   border-color: black;
 }
 .promote-plan {
@@ -905,7 +904,7 @@ body3 h1 {
   border: 2px solid rgba(233, 232, 232, 0.695);
   padding-bottom: 30px;
   transition: ease 1s;
-  width: 314px;
+  width: 414px;
   height: auto;
 }
 .promote-title {
@@ -1616,9 +1615,7 @@ button:hover {
     padding: 1em;
     border: 0.5em solid #556086;
   }
-  body {
-    overflow-x: hidden;
-  }
+
   body2 #Back {
     width: 90%;
     margin: 0 auto;
@@ -1643,6 +1640,31 @@ button:hover {
     width: 150px;
     padding-right: 30px;
     margin-right: 130px;
+    gap: 20px;
+  }
+  .status {
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: #d8000072;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+  }
+  .booking-temp {
+    margin-left: 30px;
+  }
+  .promote {
+  }
+  .promote-plan {
+    margin-left: 0;
+  }
+  .icon {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
   }
   .sub-event .details {
     width: 200px;
@@ -1695,7 +1717,25 @@ button:hover {
     justify-content: space-evenly;
     text-align: left;
   }
-
+  .input-sub {
+    padding: 10px;
+  }
+  .home-text {
+    display: flex;
+    padding-top: 10px;
+  }
+  .home-text h1 {
+    width: 200px;
+    height: 100px;
+    line-height: 32px;
+  }
+  .main-section {
+    display: flex;
+    padding-top: 10px;
+  }
+  .home-text p {
+    font-size: 10px;
+  }
   .first,
   .second,
   .third {
@@ -1742,12 +1782,17 @@ button:hover {
   .nav-bar {
     max-width: 100%;
   }
+  body5 {
+    padding-left: 10px;
+  }
   .promote {
+    margin-right: 20px;
+    width: 340px;
     overflow-x: auto;
   }
   .promote-plan {
-    width: 314px;
+    padding-left: 0;
+    width: 280px;
     height: auto;
-    margin-left: 0;
   }
 }
