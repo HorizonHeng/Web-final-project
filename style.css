@@ -887,9 +887,10 @@ body3 h1 {
 .promote {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 160px;
-  padding-left: 90px;
-  width: 100%;
+  gap: 120px;
+  padding: 50px 100px;
+  margin-left: 70px;
+  max-width: 100%;
   border-color: black;
 }
 .promote-plan {
@@ -904,7 +905,7 @@ body3 h1 {
   border: 2px solid rgba(233, 232, 232, 0.695);
   padding-bottom: 30px;
   transition: ease 1s;
-  width: 414px;
+  width: 314px;
   height: auto;
 }
 .promote-title {
@@ -1615,7 +1616,9 @@ button:hover {
     padding: 1em;
     border: 0.5em solid #556086;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   body2 #Back {
     width: 90%;
     margin: 0 auto;
@@ -1715,25 +1718,7 @@ button:hover {
     justify-content: space-evenly;
     text-align: left;
   }
-  .input-sub {
-    padding: 10px;
-  }
-  .home-text {
-    display: flex;
-    padding-top: 10px;
-  }
-  .home-text h1 {
-    width: 200px;
-    height: 100px;
-    line-height: 32px;
-  }
-  .main-section {
-    display: flex;
-    padding-top: 10px;
-  }
-  .home-text p {
-    font-size: 10px;
-  }
+
   .first,
   .second,
   .third {
@@ -1780,17 +1765,56 @@ button:hover {
   .nav-bar {
     max-width: 100%;
   }
-  body5 {
-    padding-left: 10px;
-  }
   .promote {
-    margin-right: 20px;
-    width: 340px;
     overflow-x: auto;
   }
   .promote-plan {
-    padding-left: 0;
-    width: 280px;
+    width: 314px;
     height: auto;
+<<<<<<< HEAD
+=======
+    margin-left: 0;
+  }
+}
+
+@media (max-width:360px){
+  body{
+    overflow-x: hidden;
+  }
+ .ticket{
+  width: 100%;
+ }
+ .tour-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  padding-left: 200px;
+}
+ .tour-date{
+  display: flex;
+ }
+ .tour-date h1,p{
+  font-size: 1.5em;
+  justify-content: flex-start;
+ }
+
+
+}
+@media (max-width:440px){
+  .promote{
+    transform: translateX(-50px);
+  }
+  .tour-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    padding-left: 0px;
+>>>>>>> ad889a0cb1c7ec40610150e5f8082819c4037a86
   }
 }
