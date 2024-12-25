@@ -1278,7 +1278,18 @@ button:hover {
     padding: 25px 50px;
     margin-left: 70px;
   }
-
+  .input-sub {
+    padding-top: 20px;
+  }
+  .home-text h1 {
+    width: 400px;
+    padding-bottom: 20px;
+    font-size: 32px;
+  }
+  .home-text {
+    display: flex;
+    gap: 10px;
+  }
   .tour-page {
     display: flex;
     flex-direction: column;
@@ -1771,40 +1782,37 @@ button:hover {
   .promote-plan {
     width: 314px;
     height: auto;
-<<<<<<< HEAD
-=======
     margin-left: 0;
   }
 }
 
-@media (max-width:360px){
-  body{
+@media (max-width: 360px) {
+  body {
     overflow-x: hidden;
   }
- .ticket{
-  width: 100%;
- }
- .tour-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
-  width: 100%;
-  padding-left: 200px;
+  .ticket {
+    width: 100%;
+  }
+  .tour-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    padding-left: 200px;
+  }
+  .tour-date {
+    display: flex;
+  }
+  .tour-date h1,
+  p {
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
 }
- .tour-date{
-  display: flex;
- }
- .tour-date h1,p{
-  font-size: 1.5em;
-  justify-content: flex-start;
- }
-
-
-}
-@media (max-width:440px){
-  .promote{
+@media (max-width: 440px) {
+  .promote {
     transform: translateX(-50px);
   }
   .tour-page {
@@ -1815,6 +1823,5 @@ button:hover {
     gap: 150px;
     width: 100%;
     padding-left: 0px;
->>>>>>> ad889a0cb1c7ec40610150e5f8082819c4037a86
   }
 }
