@@ -13,9 +13,7 @@ html {
 
 header {
   top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .nav-bar {
@@ -46,6 +44,7 @@ header {
 body {
   overflow-x: hidden;
 }
+
 .nav-logo {
   flex: 1 0 0;
 }
@@ -200,7 +199,6 @@ input[type="search"] {
 }
 
 .home-text p {
-  width: 32.5em;
   text-align: center;
   line-height: 1.5em;
   font-size: 1em;
@@ -321,7 +319,7 @@ input[type="search"] {
 .t-1 p,
 .t-2 p,
 .t-3 p {
-  width: 29em;
+  
   height: auto; /* Adjust height to auto */
   line-height: 1.5em;
   font-family: "Shanti", serif;
@@ -753,14 +751,14 @@ body3 h1 {
 
 .tour-page {
   display: flex;
-  padding: 80px 250px;
   justify-content: center;
   align-items: center;
   gap: 150px;
-  width: 100%;
 }
 
+
 .tour-date {
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -796,6 +794,11 @@ body3 h1 {
   background: #000;
   color: white;
 }
+.tour-date button:hover{
+  color: black;
+
+}
+
 .ticket {
   display: flex;
   flex-direction: column;
@@ -837,14 +840,15 @@ body3 h1 {
 }
 
 .event {
+
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 .sub-event {
+  padding-right: 10x;
   display: flex;
-  width: 500px;
-  gap: 16px;
+    gap: 16px;
 }
 .sub-event .details {
   width: 276px;
@@ -1221,6 +1225,18 @@ button:hover {
     padding: 2em;
     border: 1em solid #556086;
   }
+  .t-1 p,
+  .t-2 p,
+  .t-3 p {
+    height: auto; /* Adjust height to auto */
+    line-height: 1.5em;
+    font-family: "Shanti", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: white;
+  }
+  
   main {
     width: 100%;
   }
@@ -1236,6 +1252,7 @@ button:hover {
     height: auto;
     padding: 2em;
     margin-top: 1.5em;
+    max-width: 100%;
   }
 
   .collection h1 {
@@ -1592,7 +1609,6 @@ button:hover {
   .tour-page {
     display: flex;
     flex-direction: column;
-    padding-right: 150px;
     justify-content: center;
   }
   .tour-date p {
@@ -1605,12 +1621,13 @@ button:hover {
   .sub-event {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    padding-right: 30px;
-    margin-right: 50px;
+        padding-right: 30px;
   }
 }
 
+.promote{
+  overflow: auto;
+}
 @media (max-width: 576px) {
   body2 {
     padding: 1em;
@@ -1627,7 +1644,6 @@ button:hover {
   .tour-page {
     display: flex;
     flex-direction: column;
-    padding-right: 150px;
     justify-content: center;
   }
   .tour-date p {
@@ -1637,25 +1653,21 @@ button:hover {
     padding: 40px;
     margin-right: 70px;
   }
+ 
   .sub-event {
     display: flex;
     flex-direction: column;
-    width: 150px;
     padding-right: 30px;
-    margin-right: 130px;
+    
   }
   .sub-event .details {
     width: 200px;
   }
   .tour-date {
-    width: 300px;
-    padding: 5px;
+        padding: 5px;
     padding-right: 5px;
   }
-  .tour-page {
-    width: 150px;
-    padding-right: 20px;
-  }
+  
   .container {
     margin-left: 1em;
     margin-right: 1em;
@@ -1710,7 +1722,7 @@ button:hover {
   }
 
   .home-text p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .social-text {
     font-size: 3vw;
@@ -1749,5 +1761,48 @@ button:hover {
     width: 314px;
     height: auto;
     margin-left: 0;
+  }
+}
+
+@media (max-width:360px){
+  body{
+    overflow-x: hidden;
+  }
+ .ticket{
+  width: 100%;
+ }
+ .tour-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  padding-left: 200px;
+}
+ .tour-date{
+  display: flex;
+ }
+ .tour-date h1,p{
+  font-size: 1.5em;
+  justify-content: flex-start;
+ }
+ .sub-event{
+ }
+ 
+
+}
+@media (max-width:440px){
+  .promote{
+    transform: translateX(-50px);
+  }
+  .tour-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    padding-left: 0px;
   }
 }
