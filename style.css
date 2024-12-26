@@ -102,7 +102,6 @@ body {
   letter-spacing: 0.1225em;
   font-size: 1.75em;
 }
-
 .log-in {
   display: flex;
   width: 53.125em;
@@ -418,6 +417,9 @@ input[type="search"] {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: left;
+  }
+  . {
+    font-size: 16px;
   }
   body {
     overflow-x: hidden;
@@ -742,7 +744,9 @@ body3 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 100px;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 .tour-date {
@@ -753,7 +757,6 @@ body3 h1 {
   gap: 24px;
   flex: 1 0 0;
 }
-
 .tour-date h1 {
   padding-left: -50px;
   line-height: 48px;
@@ -1067,12 +1070,13 @@ body2 #Back {
 }
 
 .container {
-  margin-left: 9.375em;
+  margin-left: 50px;
+  width: 90%;
 }
 
 .collection {
   margin-top: 2.8125em;
-  padding: 1.875em;
+  padding: 20px;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -1361,6 +1365,29 @@ button:hover {
     height: 2.5em;
     margin: 1em auto;
   }
+  .tour-page {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .tour-date {
+    padding-top: 20px;
+    margin-left: 50px;
+  }
+  .icon {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .event {
+    padding-left: 120px;
+  }
+  .status {
+    display: flex;
+    justify-content: center;
+    background-color: #f40000d1;
+    border-radius: 5px;
+    color: white;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1422,7 +1449,6 @@ button:hover {
   }
 }
 
-
 @media (max-width: 768px) {
   .collection {
     flex-direction: column;
@@ -1432,7 +1458,19 @@ button:hover {
   .main-section {
     max-width: 100%;
   }
-
+  .t-1 p,
+  .t-2 p,
+  .t-3 p {
+    width: 31.5em;
+    height: auto; /* Adjust height to auto */
+    line-height: 1em;
+    font-family: "Shanti", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.6em;
+    color: white;
+    transform: translateY(-130px);
+  }
   .booking-temp {
     display: flex;
     text-align: center;
@@ -1476,59 +1514,61 @@ button:hover {
   height: 10em;
 }
 
-  .albumStore {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.albumStore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-  .albumStore img {
-    transform: none;
-    width: 80%;
-    height: auto;
-  }
-  
+.albumStore img {
+  transform: none;
+  width: 80%;
+  height: auto;
+}
 
-  .first,
-  .second,
-  .third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .nav-bar {
-    width: 100%;
-  }
-  .promote {
-    overflow-x: auto;
-  }
-  .promote-plan {
-    width: 314px;
-    height: auto;
-    margin-left: 0;
-  }
-  .tour-page {
-    display: flex;
-    justify-content: center;
-  }
-  .tour-date p {
-    width: 250px;
-  }
-  .tour-date {
-    padding: 40px;
-    margin-right: 70px;
-  }
-  .sub-event {
-    display: flex;
-        padding-right: 30px;
-  }
-
+.first,
+.second,
+.third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar {
+  width: 100%;
+}
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
+}
+.tour-page {
+  display: flex;
+  justify-content: center;
+}
+.tour-date p {
+  width: 250px;
+}
+.tour-date {
+  padding: 40px;
+  margin-right: 70px;
+}
+.sub-event {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.input-sub {
+  padding-top: 100px;
+}
 .promote {
   overflow: auto;
 }
-@media(max-width:520px){
-  .albumStore{
+@media (max-width: 520px) {
+  .albumStore {
     flex-direction: column;
   }
   .home-text h1 {
