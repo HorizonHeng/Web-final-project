@@ -13,7 +13,7 @@ html {
 
 header {
   top: 0;
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .nav-bar {
@@ -212,8 +212,6 @@ input[type="search"] {
   display: flex;
   gap: 1.25em;
   padding-top: 30px;
-  
-
 }
 
 #in-subscribe {
@@ -321,7 +319,6 @@ input[type="search"] {
 .t-1 p,
 .t-2 p,
 .t-3 p {
-  
   height: auto; /* Adjust height to auto */
   line-height: 1.5em;
   font-family: "Shanti", serif;
@@ -395,10 +392,9 @@ input[type="search"] {
   .home-text h1 {
     font-size: 4em;
   }
- 
+
   .input-sub {
     padding-top: 40px;
-
   }
   .nav-bar {
     width: 100%;
@@ -456,8 +452,6 @@ input[type="search"] {
   .home-text h1 {
     font-size: 2.5em;
   }
- 
-
 }
 @media (max-width: 520px) {
   .hamburger {
@@ -514,7 +508,7 @@ input[type="search"] {
   .home-text h1 {
     font-size: 3em;
   }
- 
+
   .input-sub {
     padding-bottom: 350px;
   }
@@ -744,7 +738,6 @@ body3 h1 {
   gap: 150px;
 }
 
-
 .tour-date {
   padding-right: 10px;
   display: flex;
@@ -823,15 +816,14 @@ body3 h1 {
 }
 
 .event {
-
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 .sub-event {
-  padding-right: 10x;
+  padding-right: 10px;
   display: flex;
-    gap: 16px;
+  gap: 16px;
 }
 .sub-event .details {
   width: 276px;
@@ -1176,6 +1168,7 @@ button:hover {
 .albumStore {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .albumStore img {
@@ -1218,7 +1211,7 @@ button:hover {
     font-size: 1em;
     color: white;
   }
-  
+
   main {
     width: 100%;
   }
@@ -1227,7 +1220,6 @@ button:hover {
     margin-right: 2em;
   }
 
-  
   .nav-bar {
     max-width: 100%;
   }
@@ -1421,7 +1413,7 @@ button:hover {
   .main-section {
     max-width: 100%;
   }
-  
+
   .booking-temp {
     display: flex;
     text-align: center;
@@ -1438,113 +1430,107 @@ button:hover {
   .collection h1 {
     font-size: 1.5em;
   }
-  
-    .home-text h1 {
-      font-size: 2.8em;
-    }
-   
-    
-    
-  }
-  .collection button {
-    font-size: 0.9em;
-    padding: 0.7em 1.2em;
-    width: auto;
-  }
 
-  .imgAlbum {
-    justify-content: center;
+  .home-text h1 {
+    font-size: 2.8em;
   }
+}
+.collection button {
+  font-size: 0.9em;
+  padding: 0.7em 1.2em;
+  width: auto;
+}
 
-  .imgAlbum img {
-    height: 10em;
-  }
+.imgAlbum {
+  justify-content: center;
+}
 
-  .albumStore {
-    flex-direction: column;
-    align-items: center;
-  }
+.imgAlbum img {
+  height: 10em;
+}
 
-  .albumStore img {
-    transform: none;
-    width: 80%;
-    height: auto;
-  }
-  .footer-container {
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-  }
+.albumStore {
+  flex-direction: column;
+  align-items: center;
+}
 
-  .first,
-  .second,
-  .third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .nav-bar {
-    width: 100%;
-  }
-  .promote {
-    overflow-x: auto;
-  }
-  .promote-plan {
-    width: 314px;
-    height: auto;
-    margin-left: 0;
-  }
-  .tour-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .tour-date p {
-    width: 250px;
-  }
-  .tour-date {
-    padding: 40px;
-    margin-right: 70px;
-  }
-  .sub-event {
-    display: flex;
-    flex-direction: column;
-        padding-right: 30px;
-  }
+.albumStore img {
+  transform: none;
+  width: 80%;
+  height: auto;
+}
+.footer-container {
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
 
+.first,
+.second,
+.third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar {
+  width: 100%;
+}
+.promote {
+  overflow-x: auto;
+}
+.promote-plan {
+  width: 314px;
+  height: auto;
+  margin-left: 0;
+}
+.tour-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tour-date p {
+  width: 250px;
+}
+.tour-date {
+  padding: 40px;
+  margin-right: 70px;
+}
+.sub-event {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
 
-.promote{
+.promote {
   overflow: auto;
 }
-@media(max-width:520px){
+@media (max-width: 520px) {
   .home-text h1 {
     font-size: 2.2em;
     transform: translateY(-100px);
-    
   }
- .home-text p{
-  font-size: 1em;
-  transform: translateY(-150px);
- }
- .input-sub{
-  padding-top: 250px;
-  padding-bottom: 0px;
- }
- 
+  .home-text p {
+    font-size: 1em;
+    transform: translateY(-150px);
+  }
+  .input-sub {
+    padding-top: 250px;
+    padding-bottom: 0px;
+  }
 }
-@media(max-width:430px){
+@media (max-width: 430px) {
   .home-text h1 {
     font-size: 1.5em;
   }
- .home-text p{
-  font-size:0.8em;
-}
+  .home-text p {
+    font-size: 0.8em;
+  }
 
-.input-sub {
-  padding-top: 230px;
-  padding-bottom: 0px;
+  .input-sub {
+    padding-top: 230px;
+    padding-bottom: 0px;
   }
   #in-subscribe {
     display: flex;
@@ -1558,7 +1544,7 @@ button:hover {
     border: 0.0625em solid rgba(0, 0, 0, 0.1);
     background: #fff;
   }
-  
+
   #email-submit {
     display: flex;
     width: 70px;
@@ -1606,21 +1592,20 @@ button:hover {
     padding: 40px;
     margin-right: 70px;
   }
- 
+
   .sub-event {
     display: flex;
     flex-direction: column;
     padding-right: 30px;
-    
   }
   .sub-event .details {
     width: 200px;
   }
   .tour-date {
-        padding: 5px;
+    padding: 5px;
     padding-right: 5px;
   }
-  
+
   .container {
     margin-left: 1em;
     margin-right: 1em;
@@ -1677,7 +1662,6 @@ button:hover {
     width: 100vw;
   }
 
-  
   .social-text {
     font-size: 3vw;
   }
@@ -1718,34 +1702,33 @@ button:hover {
   }
 }
 
-@media (max-width:360px){
-  body{
+@media (max-width: 360px) {
+  body {
     overflow-x: hidden;
   }
- .ticket{
-  width: 100%;
- }
- .tour-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
-  width: 100%;
-  padding-left: 200px;
+  .ticket {
+    width: 100%;
+  }
+  .tour-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    padding-left: 200px;
+  }
+  .tour-date {
+    display: flex;
+  }
+  .tour-date h1,
+  p {
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
 }
- .tour-date{
-  display: flex;
- }
- .tour-date h1,p{
-  font-size: 1.5em;
-  justify-content: flex-start;
- }
-
-
-}
-@media (max-width:440px){
-  .promote{
+@media (max-width: 440px) {
+  .promote {
     transform: translateX(-50px);
   }
   .tour-page {
