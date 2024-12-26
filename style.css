@@ -418,9 +418,6 @@ input[type="search"] {
     justify-content: space-evenly;
     text-align: left;
   }
-  . {
-    font-size: 16px;
-  }
   body {
     overflow-x: hidden;
   }
@@ -460,6 +457,11 @@ input[type="search"] {
   }
   .home-text h1 {
     font-size: 2.5em;
+  }
+  .status {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
   }
 }
 @media (max-width: 520px) {
@@ -1558,7 +1560,6 @@ button:hover {
 }
 .sub-event {
   display: flex;
-  flex-direction: column;
   padding-right: 50px;
 }
 .input-sub {
