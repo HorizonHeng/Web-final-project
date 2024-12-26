@@ -416,6 +416,13 @@ input[type="search"] {
   .hamburger {
     display: block; /* Show hamburger menu on small screens */
   }
+  .footer-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1045,6 +1052,8 @@ html {
 }
 body2 {
   display: flex;
+  align-content: center;
+  justify-content: center;
   padding: 4.375em;
   border: 1.875em solid #556086;
 }
@@ -1174,7 +1183,6 @@ button:hover {
 }
 
 .albumStore {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -1203,7 +1211,6 @@ button:hover {
 
 @media (max-width: 1700px) {
   body2 {
-    flex-direction: column;
     padding: 2em;
     border: 1em solid #556086;
   }
@@ -1234,7 +1241,6 @@ button:hover {
 }
 @media (max-width: 1280px) {
   body2 {
-    flex-direction: column;
     padding: 2em;
     border: 1em solid #556086;
   }
@@ -1350,6 +1356,12 @@ button:hover {
   }
 }
 
+.footer-container {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+}
 @media (max-width: 992px) {
   body2 #Back {
     width: 100%;
@@ -1410,7 +1422,14 @@ button:hover {
     height: auto;
     margin-left: 0;
   }
+  .footer-container {
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+  }
 }
+
 
 @media (max-width: 768px) {
   .collection {
@@ -1434,6 +1453,14 @@ button:hover {
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: 0.5px;
+  }
+  .first,
+  .second,
+  .third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
   .collection h1 {
     font-size: 1.5em;
@@ -1461,7 +1488,8 @@ button:hover {
   }
 
   .albumStore {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -1470,12 +1498,7 @@ button:hover {
     width: 80%;
     height: auto;
   }
-  .footer-container {
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-  }
+  
 
   .first,
   .second,
@@ -1498,7 +1521,6 @@ button:hover {
   }
   .tour-page {
     display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .tour-date p {
@@ -1510,7 +1532,6 @@ button:hover {
   }
   .sub-event {
     display: flex;
-    flex-direction: column;
         padding-right: 30px;
   }
 
@@ -1519,6 +1540,9 @@ button:hover {
   overflow: auto;
 }
 @media(max-width:520px){
+  .albumStore{
+    flex-direction: column;
+  }
   .home-text h1 {
     font-size: 2.2em;
     transform: translateY(-100px);
