@@ -18,7 +18,7 @@ header {
 
 .nav-bar {
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
   display: flex;
   width: 100%;
   height: 5em;
@@ -396,12 +396,14 @@ input[type="search"] {
     padding-top: 40px;
   }
   .nav-bar {
+    z-index: 1000;
     width: 100%;
     max-width: 100%;
   }
 }
 @media (max-width: 1080px) {
   .nav-bar {
+    z-index: 1000;
     max-width: 100%;
     width: 100%;
   }
@@ -1234,6 +1236,7 @@ button:hover {
   }
 
   .nav-bar {
+    z-index: 1000;
     max-width: 100%;
   }
 }
@@ -1539,6 +1542,13 @@ button:hover {
 .nav-bar {
   width: 100%;
 }
+.event {
+  width: 700px;
+}
+.sub-event {
+  padding-right: 20px;
+  margin-right: 20px;
+}
 .promote {
   overflow-x: auto;
 }
@@ -1562,8 +1572,12 @@ button:hover {
   display: flex;
   padding-right: 50px;
 }
+.home-text {
+  width: 600px;
+  padding-bottom: 70px;
+}
 .input-sub {
-  padding-top: 100px;
+  padding-top: 300px;
 }
 .promote {
   overflow: auto;
